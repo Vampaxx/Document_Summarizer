@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summary Output</title>
+  <style>
+    body {
+      font-family       : Arial, sans-serif;
+      background-color  : #121212; /* Dark background color */
+      color             : white;
+      margin            : 0;
+      padding           : 20px;
+      display           : flex; 
+      justify-content   : center; /* Center horizontally */
+      align-items       : center; /* Center vertically */
+      height            : 100vh; /* Full viewport height */
+    }
+    .container {
+      text-align      : center;
+      background-color: #1e1e1e; /* Summary box color */
+      padding         : 50px; /* Padding around the content */
+      border-radius   : 10px;
+      box-shadow      : 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+      max-width       : 800px; /* Set a maximum width */
+      width           : 100%; /* Full width up to max-width */
+    }
+    h1 {
+      margin-bottom : 20px;
+      font-size     : 28px;
+      color         : #ffffff;
+    }
+    #summary-output {
+      border        : 1px solid #555;
+      border-radius : 5px;
+      padding       : 10px;
+      background-color: #555;
+      height        : 300px; /* Height of the summary box */
+      overflow-y    : auto; /* Allow scrolling if content exceeds */
+    }
+    .download-button {
+      display           : block;
+      margin            : 20px auto;
+      padding           : 10px 20px;
+      font-size         : 16px;
+      background-color  : #6c757d; /* Grey button */
+      color             : #e0e0e0; /* Light grey text */
+      border            : none;
+      border-radius     : 5px;
+      cursor            : pointer;
+      text-decoration   : none; /* Remove underline */
+      text-align        : center; /* Center text */
+      transition        : background-color 0.3s ease; /* Smooth transition */
+    }
+    .download-button:hover {
+      background-color  : #b8860b; /* Change to Dark Golden Rod on hover */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Summary Output</h1>
+    <div id="summary-output">
+      <p>{{ summary }}</p>
+    </div>
+    
+    <!-- Only one button for downloading the summary -->
+    <a href="/download-summary" class="download-button">Download Summary</a>
+  </div>
+</body>
+</html>
