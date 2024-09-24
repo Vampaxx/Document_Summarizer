@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summary Output</title>
+  <!-- Link to CSS for hover effect -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/download.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Summary Output</h1>
+    <div id="summary-output">
+      <p>{{ summary }}</p>
+    </div>
+
+    <!-- Use a single anchor tag with proper class for the download -->
+    <a href="/download-summary" class="download-button">Download Summary</a>
+  </div>
+</body>
+</html>
