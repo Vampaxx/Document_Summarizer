@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Summarizer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+  
+</head>
+<body>
+  <div class="container">
+    <h1>File Summarizer</h1>
+    <div class="buttons">
+      <form method="POST" action="/upload" enctype="multipart/form-data">
+        <label for  ="file-input"       id="file-label">Browse</label>
+        <input type ="file" name="file" id="file-input" accept=".pdf, .doc, .docx, .txt" />
+        <button type="submit"           id="Summarize-btn">Summarize</button>
+      </form>
+    </div>
+    <div id="drop-zone">
+      Drag and drop your file here
+    </div>
+  </div>
+</body>
+</html>
