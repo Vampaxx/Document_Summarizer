@@ -1,0 +1,11 @@
+upload_file_root  : upload_file
+
+upload_files: 
+  pdf_file_path   : upload_file/upload_pdf_file.pdf
+  text_file_path  : upload_file/upload_text_file.txt
+  docs_file_path  : upload_file/upload_docs_file.docs
+  
+
+
+
+
