@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Summarizer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #1e1e1e;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .container h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .buttons {
+      margin-bottom: 20px;
+    }
+
+    .buttons button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #6c757d; /* Grey */
+      color: #e0e0e0;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .buttons button:hover {
+      background-color: #b8860b; /* Dark golden */
+    }
+
+    #drop-zone {
+      width: 100%;
+      max-width: 550px;
+      height: 65px;
+      margin: 0 auto;
+      padding: 15px;
+      border: 2px dashed #6c757d;
+      border-radius: 5px;
+      background-color: #2a2a2a;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    #drop-zone.dragover {
+      background-color: #3e3e3e;
+    }
+
+    #summary-box {
+      width         : 100%;
+      max-width     : 550px; 
+      height        : 165px;
+      margin        : 20px auto;
+      padding       : 15px;
+      border        : 2px solid #6c757d;
+      border-radius : 5px;
+      background-color: #2a2a2a;
+      color         : #ffffff;
+      overflow-y    : auto;
+      white-space   : pre-wrap;
+      word-wrap     : break-word;
+    }
+
+    #error-message {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>File Summarizer</h1>
+    <div class="buttons">
+      <form method="POST" action="/upload" enctype="multipart/form-data">
+        <label for    ="file-input"       id="file-label">Browse</label>
+        <input type   ="file" name="file" id="file-input" accept=".pdf, .doc, .docx, .txt" />
+        <button type  ="submit"           id="Summarize-btn">Summarize</button>
+      </form>
+    </div>
+    
+    <div id="drop-zone">
+      Drag and drop your file here
+    </div>
+  </div>
+</body>
+</html>
