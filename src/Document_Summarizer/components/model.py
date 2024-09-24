@@ -1,0 +1,21 @@
+from Document_Summarizer import logger
+from langchain_groq import ChatGroq
+from Document_Summarizer.entity.config_entity import ModelConfig
+
+
+class ModelSetup:
+
+    def __init__(self,config = ModelConfig):
+        self.config = config
+
+    def model_setup(self):
+        logger.info("Model setup initialized")
+        llm     = ChatGroq(model        = self.config.Model_name,
+                           temperature  = self.config.temperature,
+                           api_key      = self.config.api_key,)
+        
+        logger.info(f"model----{(self.config.Model_name).split('/')[-1]}----created")
+        return llm 
+    
+
+
