@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         for (let pageNum = 1; pageNum <= numPages; pageNum++) {
             pdf.getPage(pageNum).then((page) => {
-                const scale     = 1.5;
+                const scale     = 0.6;
                 const viewport  = page.getViewport({ scale: scale });
                 const canvas    = document.createElement('canvas');
                 canvas.classList.add('pdf-preview-canvas');
