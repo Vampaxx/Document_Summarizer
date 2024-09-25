@@ -33,7 +33,7 @@ if not os.path.exists(DOWNLOAD_FOLDER):
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('preview.html')
     
 
 @app.route('/upload', methods=['POST'])
