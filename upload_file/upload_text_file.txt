@@ -1,0 +1,12 @@
+**Summary:**
+
+Arjun P V is a machine learning engineer with over 3 years of industrial experience and 2.5 years of specialized expertise in data science and machine learning. He is proficient in Python programming and has skills in generative AI, deep learning, and machine learning. Arjun has worked as a data scientist at Indo Space Cable Network and as a freelancer, where he developed customer service chatbots, image segmentation models, and data automation models. He has also worked on various projects, including transformative data automation, advanced image segmentation, and diabetic retinopathy detection.
+
+**Key Points:**
+
+* **Generative AI skills:** LLM, NLP, Open AI, Llama, Gemini, RAG operation, Fine-tuning, Routing, Vector database – Chroma, Embedding, Text Generation, Text classification, Sentimental Analysis, Prompting, Data extraction
+* **Deep learning skills:** Image processing, CNN, ANN, Model Optimization
+* **Machine learning skills:** Langchain, Hugging Face, TensorFlow, PyTorch, Python, NumPy, Pandas, Keras, Scikit-learn
+* **Experience:** Data scientist at Indo Space Cable Network, freelancer, worked on various projects including customer service chatbots, image segmentation models, and data automation models
+* **Projects:** Transformative Data Automation, Advanced Image Segmentation, Diabetic Retinopathy Detection System, Resume Data Extraction System
+* **Tools and technologies:** Python, Langchain, Pandas, Matplotlib, SQL server, TensorFlow, PyTorch, Docker, Flask, Vercel, Groq, Pydantic

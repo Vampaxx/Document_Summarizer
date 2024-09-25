@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Summarizer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/preview.css') }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+  <div class="wrapper centered">
+    <div class="container">
+      <h1>File Summarizer</h1>
+      <div class="buttons">
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+          <label for="file-input" id="file-label">Browse</label>
+          <input type="file" name="file" id="file-input" accept=".pdf, .doc, .docx, .txt" />
+          <button type="submit" id="Summarize-btn">Summarize</button>
+        </form>
+      </div>
+      <div id="drop-zone">
+        Drag and drop your file here
+      </div>
+    </div>
+
+    <div id="preview-box" class="hidden">
+      <h3>File Preview:</h3>
+      <div id="preview-content"></div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/preview.js') }}"></script>
+</body>
+</html>
+
+
