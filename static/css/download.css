@@ -52,9 +52,28 @@ h1 {
     cursor            : pointer;
     text-decoration   : none;   /* Remove underline */
     text-align        : center; /* Center text */
+    text-decoration   : none;
     transition        : background-color 0.3s ease; /* Smooth transition */
 }
 
 .download-button:hover {
     background-color  : #b8860b;
+}
+.back-home {
+    display           : inline-block;
+    margin            : 20px auto;
+    padding           : 10px 20px;
+    font-size         : 16px;
+    background-color  : #228B22; /* Initial green color */
+    color             : white;
+    border            : none;
+    border-radius     : 5px;
+    cursor            : pointer;
+    text-align        : center;
+    text-decoration: none;
+    transition        : background-color 0.3s ease; /* Smooth color transition */
+}
+
+.back-home:hover {
+    background-color  : #006400; /* Dark green on hover */
 }
